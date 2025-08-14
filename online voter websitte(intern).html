@@ -57,7 +57,7 @@
     .form-container h2 {
         text-align: center;
         margin-bottom: 20px;
-        color: #000; /* Change text color to black */
+        color: #000; 
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
@@ -69,7 +69,7 @@
         display: block;
         font-weight: bold;
         margin-bottom: 5px;
-        color: #000; /* Change text color to black */
+        color: #000; 
     }
 
     .form-group input {
@@ -114,7 +114,7 @@
 
     .ballot-container.form-container {
         background-image: none;
-        background-color: #000; /* Change background color to black */
+        background-color: #000; 
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -134,7 +134,7 @@
     .ballot-question p {
         font-size: 18px;
         margin-bottom: 10px;
-        color: #000; /* Change text color to black */
+        color: #000; 
     }
 
     .ballot-question input[type="radio"] {
@@ -144,7 +144,7 @@
     .ballot-question label {
         font-size: 18px;
         margin-right: 20px;
-        color: #000; /* Change text color to black */
+        color: #000; 
     }
 
     .scroll-button {
@@ -180,7 +180,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+        background-color: rgba(255, 255, 255, 0.9); 
         z-index: 9999;
         animation: slide-in-result 0.5s ease-out;
     }
@@ -190,7 +190,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+        background-color: rgba(255, 255, 255, 0.9); 
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -213,7 +213,7 @@
     .result-content p {
         font-size: 18px;
         margin-bottom: 10px;
-        color: #000; /* Change text color to black */
+        color: #000;
     }
 
     .result-content span {
@@ -282,7 +282,7 @@
 <body>
   <div class="container">
     <div class="background-image"></div>
-    <!-- Login and Registration Section -->
+    
     <div class="form-container" id="loginContainer">
       <h2>Login</h2>
       <form id="loginForm" onsubmit="return login()">
@@ -340,7 +340,7 @@
       <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
     </div>
 
-    <!-- Ballot Section -->
+   
     <div class="container ballot-container" id="ballotContainer">
       <div class="form-container ballot">
         <h2>Ballot</h2>
@@ -357,10 +357,10 @@
         <p><a href="#" onclick="showResult()">Click here to View Result</a></p>
       </div>
     </div>
-    <!-- End of Ballot Section -->
+   
   </div>
 
-  <!-- Election Result Section -->
+
   <div class="result-container" id="resultContainer">
     <div class="result-box">
       <h2>Election Result</h2>
@@ -372,8 +372,7 @@
       <button onclick="goToLogin()">Back to Login</button>
     </div>
   </div>
-  <!-- End of Election Result Section -->
-
+ 
   <script>
     var users = [];
     var votes = {
@@ -494,17 +493,18 @@
       setTimeout(function() {
         document.getElementById("resultContainer").style.display = "none";
         document.getElementById("thankyouContainer").style.display = "block";
-      }, 30000); // 30 seconds
+      }, 30000); 
     }
   </script>
   
-  <!-- Thank You Page -->
+ 
   <div class="form-container" id="thankyouContainer" style="display: none;">
     <h2>Thank You For Voting</h2>
     <p>Your vote has been successfully casted. Your contribution matters!</p>
     <p>"Voting is not only our right—it is our power." - Loung Ung</p>
   </div>
-  <!-- End of Thank You Page -->
+  
   
 </body>
+
 </html>
